@@ -1,0 +1,37 @@
+package PhuongTrinhBacHai;
+
+public class PhuongTrinhBacHai {
+    private double a,b,c;
+    public PhuongTrinhBacHai (double a,double b,double c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
+    public double getA() {
+        return a;
+    }
+
+    public double getB() {
+        return b;
+    }
+
+    public double getC() {
+        return c;
+    }
+    public double  getDiscriminant() {
+        return b*b - 4*a*c;
+    }
+    public double getRoot1() {
+        return (-b + Math.pow(b*b-4*a*c,0.5))/(2*a);
+    }
+    public double getRoot2() {
+        return (-b - Math.pow(b*b-4*a*c,0.5))/(2*a);
+    }
+    public String getRoot3() {
+        return "Vô nghiệm";
+    }
+    public double getRoot4() {
+        return -b/(2*a);
+    }
+}
